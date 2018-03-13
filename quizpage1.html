@@ -4,24 +4,31 @@
     <meta charset="utf-8">
     <title>Round 1</title>
     <link rel="stylesheet" href="style.css">
+    <style media="screen">
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    </style>
 
     </head>
   <body>
 
-    <h2 class="quiz-question">Q1: Are you introverted of extroverted?</h2>
+    <h2 class="quiz-question">Q1: Are you introverted or extroverted?</h2>
 
-    <div class="col-sm-4">
-        <img src='images/person.jpg'>
-      <p>These sandwiches are the best I've ever tasted, for sure. I now eat them every day - breakfast, lunch and dinner.</p>
-      <small>Mr Smith, Professional sandwich taster</small>
-      <a href="http://www.google.com">a. IN</a>
-    </div>
-    <div class="col-sm-4">
-      <img src='images/person.jpg'>
-      <p>My team are always far more productive after we order from Sam's. 40% more productive, in fact.</p>
-      <small>Miss McAdam, CEO Workplace Analytics</small>
-      <a href="http://www.google.com">a. EX</a>
-  </div>
+  <div class="row">
+  <div class="column1"></div>
+  <a href="http://www.google.com">a. IN</a>
+  <div class="column2"></div>
+  <a href="http://www.google.com">a. EX</a>
+</div>
 
   </body>
 
