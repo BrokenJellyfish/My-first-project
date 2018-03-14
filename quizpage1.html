@@ -3,20 +3,25 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 .body{
   padding: 0px;
   margin: 0px;
   border: 0px;
+  color: white;
 }
 .row1 {
   background-size: 100%;
   padding:0px;
   margin:0px;
   border:0px;
-
+  color: white;
 }
 .column {
+    text-align:center;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
     position:absolute;
     top:100px;
     bottom:0;
@@ -26,33 +31,37 @@
 .left {
     left:0;
     background-image:url(lake.jpg);
-}
+    text-align:center;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    color: white;
+    }
 .right {
     right:0;
     background-image:url(sun.jpg);
+    text-align:center;
+    font-size: 30px;
+    font-family: "Lato", sans-serif;
+    color: white;
 }
-
 /* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
     padding: 10px;
 }
-
 .row1 {
   text-align: center;
   font-family: "Lato", sans-serif;
-
-
+}
 .row2 {
-    height: 90%;
     content: "";
     display: table;
     clear: both;
-
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    color: white;
 }
-
-
 </style>
 </head>
 <body background="jellyfishbandw.jpg">
@@ -66,13 +75,10 @@
 </div>
 
 <div class="row2">
-  <div class="column left">
-    <h3><a href="http://www.google.com">a. IN</a></h3>
-  </div>
-  <div class="column right">
-    <h4><a href="http://www.google.com">a. EX</a></h4>
-  </div>
+  <a class="column left" href="http://www.google.com" title="A lake" id="lake">Introverted</a>
+  <a class="column right" href="http://www.google.com" title="A sun" id="sun">Extroverted</a>
 </div>
+
 
 
 </body>
