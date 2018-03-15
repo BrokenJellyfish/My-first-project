@@ -1,0 +1,40 @@
+
+* {
+    box-sizing: border-box;
+}
+.row::after { <!-- inserts after every row -->
+    content: "";
+    clear: both; <!-- doesn't allow anything either side of a row-->
+    display: table; <!-- behaves like a table -->
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 50%;}
+.col-2 {width: 50%;}
+
+/* For desktop: */
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+    padding: 15px;
+    color: white;
+    z-index: 1;
+    text-align: center;
+}
+
+.body {
+  color: white;
+  text-align: center;
+}
