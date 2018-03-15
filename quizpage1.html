@@ -3,6 +3,8 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 .body{
@@ -21,7 +23,7 @@
 .column {
     text-align:center;
     font-size: 30px;
-    font-family: "Lato", sans-serif;
+    font-family: monospace;
     position:absolute;
     top:100px;
     bottom:0;
@@ -31,7 +33,7 @@
 
 .left {
     left:0;
-    background-image:url(introvert.jpg);
+    background-image:url(lake.jpg);
     text-align:center;
     font-size: 30px;
     font-family: "Lato", sans-serif;
@@ -53,11 +55,12 @@
 .column {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding: 1px;
 }
 .row1 {
   text-align: center;
   font-family: "Lato", sans-serif;
+  letter-spacing: 8px;
 }
 .row2 {
     content: "";
@@ -66,23 +69,39 @@
     text-align: center;
     font-family: "Lato", sans-serif;
     color: white;
+    letter-spacing: 10px;
 }
+
+a:link {
+    text-decoration: none;
+}
+
 </style>
 </head>
-<body background="jellyfishbandw.jpg">
+<body background="jellyfishagain.jpg">
 
+<div class="container container-fluid">
 
+  <div class="row1">
+    <br>
+    <h1>Are you extroverted?</h1>
+    <br><br>
+  </div>
 
-<div class="row1">
-  <br>
-  <h1>Are you extroverted or introverted?</h1>
-  <br><br>
+  <div class="row2">
+    <div class="col-xm-6">
+        <a class="column left" href="http://www.google.com" title="A lake" id="lake"><br>Introverted</h1></a>
+    </div>
+    <div class="col-xm-6">
+      <a class="column right" href="http://www.google.com" title="A sun" id="sun"><br>Extroverted</a>
+    </div>
+
+  </div>
 </div>
 
-<div class="row2">
-  <a class="column left" href="http://www.google.com" title="A lake" id="lake">Introverted</a>
-  <a class="column right" href="http://www.google.com" title="A sun" id="sun">Extroverted</a>
-</div>
+
+
+
 
 </body>
 </html>
